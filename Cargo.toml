@@ -1,0 +1,15 @@
+[package]
+name = "aurora"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+
+[workspace]
+members = [
+    "crates/*"
+]
+
+[workspace.dependencies]
+
+[dependencies]
+aurora_internal = { path = "crates/aurora_internal", version = "0.1.0", default-features = false }
